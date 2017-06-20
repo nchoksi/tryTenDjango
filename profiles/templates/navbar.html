@@ -51,15 +51,15 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></a>
                       <ul class="dropdown-menu">
 
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Signup</a></li>
+                            <li><a href="{% url 'account_login' %}">Login</a></li>
+                            <li><a href="{% url 'account_signup' %}">Signup</a></li>
 
-                              <li><a href="#">Profile</a></li>
+                              <li><a href="{% url 'profile' %}">Profile</a></li>
 
                       </ul>
                 </li>
                  <li class="">
-                    <a href="#">
+                    <a href="{% url 'account_logout' %}">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp; Logout
                     </a>
                 </li>
